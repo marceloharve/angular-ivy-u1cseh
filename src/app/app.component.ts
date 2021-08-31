@@ -4,8 +4,7 @@ import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog
 import { TopicoAula } from './topicoaula';
 import {MatMenuModule} from '@angular/material/menu';
 import { Router } from "@angular/router";
-
-
+import { DomSanitizer } from '@angular/platform-browser';
 
 export interface DialogData {
 
@@ -25,7 +24,7 @@ export class AppComponent  {
 
   openDialog(): void {
     const dialogRef = this.dialog.open(Menu, {
-      width: '400px',height:'400px',
+      width: '500px',height:'400px',
       data: {dados: this.dados}
     });
 

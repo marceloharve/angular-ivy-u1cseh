@@ -3,105 +3,91 @@ import { SafeHtml, SafeResourceUrl } from '@angular/platform-browser';
 import { DadosAulaService } from '../dados-aula.service';
 import { Router } from '@angular/router';
 import { ActivatedRoute } from '@angular/router';
-import { CommonModule } from '@angular/common';  
+import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { Desafio } from '../desafio';
-import {SafeHtmlPipe } from '../safe-html-pipe.pipe';
+import { DomSanitizer } from '@angular/platform-browser';
+
 
 @Component({
   selector: 'app-aula1',
   templateUrl: './aula1.component.html',
   styleUrls: ['./aula1.component.css']
 })
-
 export class Aula1Component implements OnInit {
   botaoatual = 0;
   divvideo = true;
   divboasvindas = false;
+  divcp = false;
   divrevisao = false;
   divdesafio = false;
   divrespotacorreta = false;
   classeresposta = 'respostaerrada';
-  aulaatual = "";
+  aulaatual = '';
   divControles = false;
 
-  revisaoatual = "";
-  boasvindas = "";
+  revisaoatual = '';
+  boasvindas : SafeHtml;
+  cp = '';
   respostaCorreta = 0;
   respostausuario = '';
   respostas: string[];
-  textosetup = "";
-  videoatual : SafeResourceUrl;
-  perguntaatual = "";
-
+  textosetup = '';
+  videoatual: SafeResourceUrl;
+  perguntaatual = '';
 
   setup = false;
-  id : number;
+  id: number;
 
-  constructor(public dados : DadosAulaService,private route: ActivatedRoute,
-    ) {
-      this.route.paramMap.subscribe(params => {
-        this.id = Number(params.get('id'));
-        this.dados.selecionatopico(this.id);
-        this.imprimiraula();
-        
-      });
-      
+
+  constructor(public dados: DadosAulaService, private route: ActivatedRoute,private domSanitizer:DomSanitizer) {
+    this.route.paramMap.subscribe(params => {
+      this.id = Number(params.get('id'));
+      this.dados.selecionatopico(this.id);
+      this.imprimiraula();
+    });
   }
 
-  ngOnInit() {
+  ngOnInit() {}
 
-
-  }
-
-  defineControles()
-  {
-    if(this.botaoatual==0)
-    {
+  defineControles() {
+    if (this.botaoatual == 0) {
       this.videoclick();
-    }
-    else
-    {
-
-      if(this.botaoatual==1)
-      {
+    } else {
+      if (this.botaoatual == 1) {
         this.revisaoclick();
-      }
-      else
-      {
+      } else {
         this.desafioclick();
-  
       }
     }
     this.divControles = true;
   }
 
-  imprimiraula()
-  {
- 
+  imprimiraula() {
     this.boasvindas = this.dados.getBoasVindasAtual();
+    this.cp = this.dados.getCPAtual();
     this.aulaatual = this.dados.getAulaAtual();
     console.log(this.boasvindas);
-    if(this.dados.hasBoasVindas())
-    {
-      console.log('ssss')
+    if (this.dados.hasBoasVindas()) {
       this.defineboasvindas();
       this.divControles = false;
-    }
-    else
-    {
-      this.defineControles();
-      this.revisaoatual = this.dados.getRevisaoAtual();
-      this.videoatual = this.dados.getVideoAtual();
+    } else {
+      if (this.dados.hasCP()) {
+        this.defineCP();
+        this.divControles = false;
+      } else {
+        this.defineControles();
+        this.revisaoatual = this.dados.getRevisaoAtual();
+        this.videoatual = this.dados.getVideoAtual();
 
-      this.perguntaatual = this.dados.getPerguntaAtual();
-      let desafio:Desafio = this.dados.getAtual().desafio;
-      if(desafio != undefined)
-      {
-        this.respostaCorreta = desafio.respostacerta;
-        this.respostas = desafio.respostas;
-        this.setup = this.dados.hasSetup();
-        this.textosetup = desafio.setup;
+        this.perguntaatual = this.dados.getPerguntaAtual();
+        let desafio: Desafio = this.dados.getAtual().desafio;
+        if (desafio != undefined) {
+          this.respostaCorreta = desafio.respostacerta;
+          this.respostas = desafio.respostas;
+          this.setup = this.dados.hasSetup();
+          this.textosetup = desafio.setup;
+        }
       }
     }
   }
@@ -111,6 +97,7 @@ export class Aula1Component implements OnInit {
     this.divrevisao = false;
     this.divvideo = true;
     this.divboasvindas = false;
+    this.divcp = false;
     this.botaoatual = 0;
   }
 
@@ -119,6 +106,7 @@ export class Aula1Component implements OnInit {
     this.divrevisao = true;
     this.divvideo = false;
     this.divboasvindas = false;
+    this.divcp = false;
     this.botaoatual = 1;
   }
 
@@ -127,45 +115,48 @@ export class Aula1Component implements OnInit {
     this.divrevisao = false;
     this.divvideo = false;
     this.divboasvindas = false;
+    this.divcp = false;
     this.botaoatual = 2;
   }
 
-  limpar()
-  {    
-    this.revisaoatual = "";
-    this.boasvindas = "";
+  limpar() {
+    this.revisaoatual = '';
+    this.boasvindas = '';
     this.respostaCorreta = 0;
     this.respostausuario = '';
     this.respostas = undefined;
-    this.textosetup = "";
+    this.textosetup = '';
     this.videoatual = undefined;
-    this.perguntaatual = "";
+    this.perguntaatual = '';
     this.divControles = false;
+    this.divcp = false;
   }
 
-  defineboasvindas()
-  {
+  defineboasvindas() {
     this.divdesafio = false;
     this.divrevisao = false;
     this.divvideo = false;
     this.divboasvindas = true;
+    this.divcp = false;
   }
 
+  defineCP() {
+    this.divdesafio = false;
+    this.divrevisao = false;
+    this.divvideo = false;
+    this.divboasvindas = false;
+    this.divcp = true;
+  }
 
-  continuar()
-  {
-    if(this.divvideo){
+  continuar() {
+    if (this.divvideo) {
       this.revisaoclick();
-    }
-    else
-    {
-      if(this.divrevisao){
+    } else {
+      if (this.divrevisao) {
         this.desafioclick();
-      }
-      else
-      {
-        this.dados.proximaAula(); 
-        this.videoclick(); 
+      } else {
+        this.dados.proximaAula();
+        this.videoclick();
         this.imprimiraula();
       }
     }

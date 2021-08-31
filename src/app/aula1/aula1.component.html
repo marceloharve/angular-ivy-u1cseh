@@ -1,3 +1,4 @@
+<div class="divprincipal">
 <h1>{{dados._analytics.nome }} - {{aulaatual}}</h1>
 <ng-container *ngIf="divControles">
 <section>
@@ -30,6 +31,7 @@
   </div>
 </section>
 </ng-container>
+</div>
 <ng-container *ngIf="divvideo">
   <div style="padding:56.25% 0 0 0;position:relative;"><iframe [src]="videoatual" frameborder="0"
       allow="autoplay; fullscreen; picture-in-picture" allowfullscreen=""
@@ -42,7 +44,10 @@
   <div [innerHTML]="revisaoatual"></div>
 </ng-container>
 <ng-container *ngIf="divboasvindas">
-  <div [innerHTML]="boasvindas"></div>
+  <div [innerHTML]="boasvindas | safe: 'html'"></div>
+</ng-container>
+<ng-container *ngIf="divcp">
+<div [innerHTML]="cp"></div>
 </ng-container>
 <ng-container *ngIf="divdesafio">
   <label id="example-radio-group-label"

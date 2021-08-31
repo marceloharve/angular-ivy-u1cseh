@@ -8,8 +8,7 @@ export class DadosAulaService implements OnInit {
   [x: string]: any;
   _analytics: Aula = (data as any).default;
   constructor(private sanitizer: DomSanitizer) {
-    console.log('rr');
-    console.log(this._analytics);
+
     this._analytics.atual = true;
     this._analytics.topicos[0].atual = true;
     this._analytics.topicos.forEach(p =>{
@@ -38,6 +37,18 @@ export class DadosAulaService implements OnInit {
 
       return item.MensagemBoasVindas;
     } else {
+      return null;
+    }
+
+  }
+
+  getCPAtual(){
+    let item = this._analytics.topicos.find(p => p.atual == true);
+
+    if (item != null) {
+
+      return item.CP;
+    } else {
       return '';
     }
 
@@ -49,6 +60,16 @@ export class DadosAulaService implements OnInit {
     console.log('msg boas vindas');
     console.log(_aulaAtual.MensagemBoasVindas);
     if (_aulaAtual.MensagemBoasVindas == undefined) {
+      return false;
+    } else {
+      return true;
+    }
+  }
+
+  hasCP()
+  {
+    let _aulaAtual = this.getAtual();
+    if (_aulaAtual.CP == undefined) {
       return false;
     } else {
       return true;

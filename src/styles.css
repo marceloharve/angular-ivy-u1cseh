@@ -9,3 +9,7 @@ a {
   color: rgb(15, 15, 15);
   text-decoration: none; /* no underline */
 }
+
+.btnMenu{
+  width: 100%;
+}

@@ -25,7 +25,10 @@
   <button mat-button [hidden]="!aula.checked">
   <mat-icon>check</mat-icon>
 </button>
-    <button mat-button (click)="selectaula(aula.idTopicoAula)">{{aula.nome}}</button>
+    <button mat-button (click)="selectaula(aula.idTopicoAula)" class="btnMenu">
+      {{aula.nome}} 
+
+    </button>
 
 
     </mat-list-item
