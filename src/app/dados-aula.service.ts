@@ -30,6 +30,28 @@ export class DadosAulaService implements OnInit {
     }
   }
 
+  
+  getBoasVindasAtual() {
+    let item = this._analytics.topicos.find(p => p.atual == true);
+
+    if (item != null) {
+
+      return this.sanitizer.bypassSecurityTrustHtml(item.MensagemBoasVindas);
+    } else {
+      return '';
+    }
+  }
+
+  hasBoasVindas()
+  {
+    let _aulaAtual = this.getAtual();
+    if (_aulaAtual.MensagemBoasVindas != '') {
+      return false;
+    } else {
+      return true;
+    }
+  }
+
   getAulaAtual() {
     let item = this._analytics.topicos.find(p => p.atual == true);
 
@@ -59,6 +81,7 @@ export class DadosAulaService implements OnInit {
       return '';
     }
   }
+  
 
   getAtual() {
     return this._analytics.topicos.find(p => p.atual == true);
