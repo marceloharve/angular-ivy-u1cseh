@@ -22,14 +22,12 @@
 ></mat-progress-bar>
 <mat-list *ngFor="let aula of data.dados._analytics.topicos">
   <mat-list-item>
+  <button mat-button [hidden]="!aula.checked">
+  <mat-icon>check</mat-icon>
+</button>
     <button mat-button (click)="selectaula(aula.idTopicoAula)">{{aula.nome}}</button>
-    <p style="font-size:12px;">
-      
-      
-    </p>
-    <button mat-button [hidden]="!aula.checked">
-      <mat-icon>check</mat-icon>
-    </button>
+
+
     </mat-list-item
   >
   <mat-divider></mat-divider>

@@ -6,6 +6,7 @@ import { ActivatedRoute } from '@angular/router';
 import { CommonModule } from '@angular/common';  
 import { BrowserModule } from '@angular/platform-browser';
 import { Desafio } from '../desafio';
+import {SafeHtmlPipe } from '../safe-html-pipe.pipe';
 
 @Component({
   selector: 'app-aula1',
@@ -14,22 +15,27 @@ import { Desafio } from '../desafio';
 })
 
 export class Aula1Component implements OnInit {
+  botaoatual = 0;
   divvideo = true;
-  aulaatual = "";
-  revisaoatual = "";
-  boasvindas : SafeHtml;
   divboasvindas = false;
-  videoatual : SafeResourceUrl;
-  perguntaatual = ""
   divrevisao = false;
   divdesafio = false;
   divrespotacorreta = false;
   classeresposta = 'respostaerrada';
-  setup = false;
+  aulaatual = "";
+  divControles = false;
+
+  revisaoatual = "";
+  boasvindas = "";
   respostaCorreta = 0;
   respostausuario = '';
   respostas: string[];
   textosetup = "";
+  videoatual : SafeResourceUrl;
+  perguntaatual = "";
+
+
+  setup = false;
   id : number;
 
   constructor(public dados : DadosAulaService,private route: ActivatedRoute,
@@ -48,6 +54,28 @@ export class Aula1Component implements OnInit {
 
   }
 
+  defineControles()
+  {
+    if(this.botaoatual==0)
+    {
+      this.videoclick();
+    }
+    else
+    {
+
+      if(this.botaoatual==1)
+      {
+        this.revisaoclick();
+      }
+      else
+      {
+        this.desafioclick();
+  
+      }
+    }
+    this.divControles = true;
+  }
+
   imprimiraula()
   {
  
@@ -56,11 +84,13 @@ export class Aula1Component implements OnInit {
     console.log(this.boasvindas);
     if(this.dados.hasBoasVindas())
     {
+      console.log('ssss')
       this.defineboasvindas();
+      this.divControles = false;
     }
     else
     {
-      
+      this.defineControles();
       this.revisaoatual = this.dados.getRevisaoAtual();
       this.videoatual = this.dados.getVideoAtual();
 
@@ -81,6 +111,7 @@ export class Aula1Component implements OnInit {
     this.divrevisao = false;
     this.divvideo = true;
     this.divboasvindas = false;
+    this.botaoatual = 0;
   }
 
   revisaoclick() {
@@ -88,6 +119,7 @@ export class Aula1Component implements OnInit {
     this.divrevisao = true;
     this.divvideo = false;
     this.divboasvindas = false;
+    this.botaoatual = 1;
   }
 
   desafioclick() {
@@ -95,6 +127,20 @@ export class Aula1Component implements OnInit {
     this.divrevisao = false;
     this.divvideo = false;
     this.divboasvindas = false;
+    this.botaoatual = 2;
+  }
+
+  limpar()
+  {    
+    this.revisaoatual = "";
+    this.boasvindas = "";
+    this.respostaCorreta = 0;
+    this.respostausuario = '';
+    this.respostas = undefined;
+    this.textosetup = "";
+    this.videoatual = undefined;
+    this.perguntaatual = "";
+    this.divControles = false;
   }
 
   defineboasvindas()

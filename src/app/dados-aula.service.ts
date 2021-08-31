@@ -40,12 +40,15 @@ export class DadosAulaService implements OnInit {
     } else {
       return '';
     }
+
   }
 
   hasBoasVindas()
   {
     let _aulaAtual = this.getAtual();
-    if (_aulaAtual.MensagemBoasVindas != '') {
+    console.log('msg boas vindas');
+    console.log(_aulaAtual.MensagemBoasVindas);
+    if (_aulaAtual.MensagemBoasVindas == undefined) {
       return false;
     } else {
       return true;
