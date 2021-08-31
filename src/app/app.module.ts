@@ -18,10 +18,12 @@ import {MatListModule} from '@angular/material/list';
 import {Menu} from './app.component';
 import {MatMenuModule} from '@angular/material/menu';
 import { SafePipe } from './safe.pipe';
+import { ListacursosComponent } from './listacursos/listacursos.component';
 
 @NgModule({
   imports:      [ MatMenuModule,MatListModule,MatDialogModule, BrowserAnimationsModule,MatCardModule,MatRadioModule,MatButtonModule,MatToolbarModule, MatProgressBarModule, MatIconModule,BrowserModule, FormsModule,  RouterModule.forRoot([
     {path: "aula1/:id", component: Aula1Component},
+    {path: "listacursos", component: ListacursosComponent},
   ]), ],
   declarations: [ SafePipe,Menu,AppComponent, HelloComponent,Aula1Component ],
   bootstrap:    [ AppComponent ],
