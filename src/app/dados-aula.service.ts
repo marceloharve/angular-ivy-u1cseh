@@ -36,7 +36,7 @@ export class DadosAulaService implements OnInit {
 
     if (item != null) {
 
-      return this.sanitizer.bypassSecurityTrustHtml(item.MensagemBoasVindas);
+      return item.MensagemBoasVindas;
     } else {
       return '';
     }
@@ -76,7 +76,10 @@ export class DadosAulaService implements OnInit {
     let item = this._analytics.topicos.find(p => p.atual == true);
 
     if (item != null) {
-      return item.desafio.pergunta;
+      if(item.desafio != undefined)
+        return item.desafio.pergunta;
+      else
+      { return ''}
     } else {
       return '';
     }

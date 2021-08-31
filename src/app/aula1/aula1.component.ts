@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
 import { ActivatedRoute } from '@angular/router';
 import { CommonModule } from '@angular/common';  
 import { BrowserModule } from '@angular/platform-browser';
+import { Desafio } from '../desafio';
 
 @Component({
   selector: 'app-aula1',
@@ -62,11 +63,16 @@ export class Aula1Component implements OnInit {
       
       this.revisaoatual = this.dados.getRevisaoAtual();
       this.videoatual = this.dados.getVideoAtual();
+
       this.perguntaatual = this.dados.getPerguntaAtual();
-      this.respostaCorreta = this.dados.getAtual().desafio.respostacerta;
-      this.respostas = this.dados.getAtual().desafio.respostas;
-      this.setup = this.dados.hasSetup();
-      this.textosetup = this.dados.getAtual().desafio.setup;
+      let desafio:Desafio = this.dados.getAtual().desafio;
+      if(desafio != undefined)
+      {
+        this.respostaCorreta = desafio.respostacerta;
+        this.respostas = desafio.respostas;
+        this.setup = this.dados.hasSetup();
+        this.textosetup = desafio.setup;
+      }
     }
   }
 
