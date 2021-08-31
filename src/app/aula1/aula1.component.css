@@ -1,0 +1,88 @@
+section {
+  display: table;
+}
+
+.example-label {
+  display: table-cell;
+  font-size: 14px;
+  margin-left: 8px;
+  min-width: 120px;
+}
+
+.esqbutton {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px; 
+}
+
+.dirbutton {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px; 
+}
+
+.centerbutton {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px; 
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px; 
+}
+
+.example-button-row {
+  display: table-cell;
+  width: 490px;
+  text-align: center;
+}
+
+.example-button-row .mat-button-base {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.example-flex-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.example-button-container {
+  display: flex;
+  justify-content: center;
+  width: 120px;
+}
+
+mat-progress-bar
+{
+  margin-top: 8px;
+}
+
+.example-radio-group {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+
+.example-radio-button {
+  margin: 5px;
+}
+
+.divContinuar
+{
+  text-align: right;
+}
+
+.btnContinuar{
+  margin:8px;
+
+}
+
+.respostacerta{
+  color: green;
+}
+
+.respostaerrada{
+  color: red;
+}
+
+.divSetup
+{
+  background-color: rgb(209, 207, 110);
+}

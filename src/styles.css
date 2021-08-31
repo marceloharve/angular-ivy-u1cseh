@@ -1,0 +1,11 @@
+/* Add application styles & imports to this file! */
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+[hidden] {
+  display: none !important;
+}
+a {
+  color: rgb(15, 15, 15);
+  text-decoration: none; /* no underline */
+}
