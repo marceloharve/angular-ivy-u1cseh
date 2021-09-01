@@ -47,6 +47,74 @@
 				},
 				{
 					"idTopicoAula": 3,
+					"nome": "Introdução aos Relatórios",
+					"video": "https://player.vimeo.com/video/561098467?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;h=6c9b83328e",
+					"revisao": "<h2>O que aprendemos até aqui (Introdução aos relatórios)</h2><br><br>Conhecemos os principais relatórios do Google Analytics: Tempo real, público-alvo, aquisição, comportamento e conversões. Saiba mais sobre os relatórios do Google Analytics.<br><br><h3>Tempo real</h3><br>Os relatórios de tempo real mostram o que está acontecendo neste momento no seu site, como quantidade de acessos, quais páginas estão sendo visitadas e quais ações estão sendo realizadas.<h3>Público-alvo</h3>O relatório de público-alvo mostram informações sobre os usuários que acessaram seu site, como idade, sexo, cidade, navegadores e dispositivos (celular, tablet e desktop).<br><br><h3>Aquisição</h3><br>Os relatórios de Aquisição mostram de onde vieram  os usuários que acessaram o seu site, como Buscas no Google, Facebook, etc.<br><br><h3>Comportamento</h3><br>Os relatórios de comportamento mostram o que os usuários fizeram no site, quais páginas visualizaram, os eventos realizados e em quais páginas abandonaram o site.<br><br><h3>Conversões</h3><br>Já os relatórios de conversões mostram os resultados no seu site. Como os resultados de cada site dependem do objetivo de cada um, as conversões não vêm pré-configuradas.",
+					"desafio": {
+						"pergunta": "Se queremos procurar os dados de quantas pessoas chegaram até o meu site vindo de blog de parceiros durante o ano passado, onde devo procurar?",
+						"respostas": [
+							"Tempo real",
+							"Público-alvo",
+							"Aquisição",
+							"Comportamento"
+						],
+						"respostacerta": 2,
+						"setup": "<p></p><h2>Setup - Analytics</h2><div>    <div><p></p><h3>Para realizar esse desafio, você precisará realizar os seguintes setups:</h3> <p><br></p> <p><b>Ferramenta</b>: Google Analytics</p><p><b>Conta vinculada</b>: Google Merchandising Store</p><p><b>Forma de acesso</b>: Web via browser</p> <p><a href=\"https://analytics.google.com/analytics/web/?utm_source=demoaccount&amp;utm_medium=demoaccount&amp;utm_campaign=demoaccount#/report/visitors-overview/a54516992w87479473p92320289/\" target=\"_blank\" class=\"btn-link btn-secondary\"><b>Acessar</b></a></p><p><br></p><p><b>Empresas:</b></p><p><b>Google Merchandising Store</b></p><p>A loja do Google Merchandiging Store é uma loja virtual do Google que permite a compra de brindes e produtos ligados a Marca Google como canecas, camisetas, entre outros.</p></div></div><br><p></p>"
+					}
+				},
+				{
+					"idTopicoAula": 4,
+					"nome": "Relatórios de Público-Alvo",
+					"video": "https://player.vimeo.com/video/561101948?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;h=bec24e8e17",
+					"revisao": "<h2>O que aprendemos até aqui (Relatórios de Público-Alvo)</h2><br>Nesta aula vimos como funcionam os relatórios de Público-Alvo. O foco destes relatórios é mostrar informações de quem acessa o seu site, como idade, sexo, cidade.<br><br>Além disso ele pode ser usado para entender sazonalidades, ao olharmos o relatório de visão geral.<br><br><h3>Métricas</h3><br>Taxa de rejeição: Indica a porcentagem de sessões com apenas uma única página visualizada em relação total de sessões.<br><br>Duração média da sessão: Quanto tempo em média os usuários estão ficando durante uma sessão (visita ao seu site).<br><br><h3>Principais Relatórios de público-alvo</h3><br>Visão Geral (o primeiro que vemos ao abrir o GA)<br>Informações demográficas > Visão Geral<br>Geográfico > Local<br>Dispositivos Móveis > Visão Geral",
+					"desafio": {
+						"pergunta": "No Google Merchandiging store considerando somente o mês de Julho de 2021, os acessos no site vieram em sua maioria de qual sistema operacional?",
+						"respostas": [
+							"Windows",
+							"Macintosh",
+							"iOS",
+							"Android"
+						],
+						"respostacerta": 1,
+						"setup": "<p></p><h2>Setup - Analytics</h2><div>    <div><p></p><h3>Para realizar esse desafio, você precisará realizar os seguintes setups:</h3> <p><br></p> <p><b>Ferramenta</b>: Google Analytics</p><p><b>Conta vinculada</b>: Google Merchandising Store</p><p><b>Forma de acesso</b>: Web via browser</p> <p><a href=\"https://analytics.google.com/analytics/web/?utm_source=demoaccount&amp;utm_medium=demoaccount&amp;utm_campaign=demoaccount#/report/visitors-overview/a54516992w87479473p92320289/\" target=\"_blank\" class=\"btn-link btn-secondary\"><b>Acessar</b></a></p><p><br></p><p><b>Empresas:</b></p><p><b>Google Merchandising Store</b></p><p>A loja do Google Merchandiging Store é uma loja virtual do Google que permite a compra de brindes e produtos ligados a Marca Google como canecas, camisetas, entre outros.</p></div></div><br><p></p>"
+					}
+				},
+				{
+					"idTopicoAula": 5,
+					"nome": "Relatórios de Aquisição",
+					"video": "https://player.vimeo.com/video/561374087?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;h=540e29de0c",
+					"revisao": "<h2>Nesta aula vimos como funcionam os relatórios de Aquisição. O foco destes relatórios é mostrar informações das fontes de tráfego que geraram vistas ao seu site, como Busca orgânica, Facebook, instagram, etc.</h2><br><br>Principais Fontes de tráfego<br><br>Tráfego orgânico: Usuários vindos de buscadores.<br>Tráfego direto: Usuários vindos através da digitação da URL no navegador.<br>Paid source: Usuários vindos da campanhas de pesquisa patrocinadas.<br>Display: Usuários vindos de campanhas display no google.<br>Referral: Usuários vindos de links clicados em outros sites que apontam para o seu site.<br>Social: Usuários vindos de redes sociais.<br>E-mail: Usuários vindos de links de e-mails.<br>Other: Usuários vindos de fontes não identificadas.",
+					"desafio": {
+						"pergunta": "No Google Merchandiging store considerando somente o mês de Julho de 2021, qual foi o volume de acesso do tráfego pago de campanhas do Google Ads?",
+						"respostas": [
+							"1,42%",
+							"7,23%",
+							"10,32%",
+							"12,9%"
+						],
+						"respostacerta": 0,
+						"setup": "<p></p><h2>Setup - Analytics</h2><div>    <div><p></p><h3>Para realizar esse desafio, você precisará realizar os seguintes setups:</h3> <p><br></p> <p><b>Ferramenta</b>: Google Analytics</p><p><b>Conta vinculada</b>: Google Merchandising Store</p><p><b>Forma de acesso</b>: Web via browser</p> <p><a href=\"https://analytics.google.com/analytics/web/?utm_source=demoaccount&amp;utm_medium=demoaccount&amp;utm_campaign=demoaccount#/report/visitors-overview/a54516992w87479473p92320289/\" target=\"_blank\" class=\"btn-link btn-secondary\"><b>Acessar</b></a></p><p><br></p><p><b>Empresas:</b></p><p><b>Google Merchandising Store</b></p><p>A loja do Google Merchandiging Store é uma loja virtual do Google que permite a compra de brindes e produtos ligados a Marca Google como canecas, camisetas, entre outros.</p></div></div><br><p></p>"
+					}
+				},
+				{
+					"idTopicoAula": 6,
+					"nome": "Relatórios de Comportamento",
+					"video": "https://player.vimeo.com/video/561529579?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;h=89a4807c4e",
+					"revisao": "Nesta aula vimos como funcionam os relatórios de Comportamento. O foco destes relatórios é mostrar informações ações dos usuários dentro do seu site, como quais páginas foram visualizadas, em quais páginas abandonaram seu site, etc.<br><br>Vimos também<br>Um usuário pode gerar várias sessões. Cada sessão pode gerar várias visualizações de página.<br><br>O relatório de conteúdo diz qual página foi mais visualizada.<br><br>As páginas de destino são as primeiras páginas vistas quando seu usuário acessa o seu site. Assim você entende onde os usuários começam a navegar no seu site.<br><br>Página de saída representam em quais páginas o usuário abandona o seu site.<br><br>Otimizar  páginas com alta taxas de saída e rejeição são um ótimo caminho para começar a melhorar o seu site.",
+					"desafio": {
+						"pergunta": "O tempo médio de carregamento das páginas do Google Merchandising store quando comparamos o primeiro trimestre de 2021 com 2020. Foi?",
+						"respostas": [
+							"2020 foi mais rápido 4,87%",
+							"2021 foi mais rápido 3,23%",
+							"2020 foi mais rápido 30,23% ",
+							"2021 foi mais rápido 1,23%"
+						],
+						"respostacerta": 1,
+						"setup": "<p></p><h2>Setup - Analytics</h2><div>    <div><p></p><h3>Para realizar esse desafio, você precisará realizar os seguintes setups:</h3> <p><br></p> <p><b>Ferramenta</b>: Google Analytics</p><p><b>Conta vinculada</b>: Google Merchandising Store</p><p><b>Forma de acesso</b>: Web via browser</p> <p><a href=\"https://analytics.google.com/analytics/web/?utm_source=demoaccount&amp;utm_medium=demoaccount&amp;utm_campaign=demoaccount#/report/visitors-overview/a54516992w87479473p92320289/\" target=\"_blank\" class=\"btn-link btn-secondary\"><b>Acessar</b></a></p><p><br></p><p><b>Empresas:</b></p><p><b>Google Merchandising Store</b></p><p>A loja do Google Merchandiging Store é uma loja virtual do Google que permite a compra de brindes e produtos ligados a Marca Google como canecas, camisetas, entre outros.</p></div></div><br><p></p>"
+					}
+				},
+				{
+					"idTopicoAula": 3,
 					"nome": "Centro de Práticas",
 					"CP": "<h2>Sua experiência vai ficar completa no Centro de Práticas Harve</h2><br>  Aplicação do conhecimento em desafios reais<br><br>    Tudo que viu nas videoaulas online são abordados em desafios enfrentados pelo mercado, com insights entre os alunos e o facilitador para a resolução dos desafios.<br><br>    Turmas exclusivas de no máximo 10 alunos <br><br>O contato próximo entre os alunos permite que todos tenham voz e se abram para a troca de aprendizado e network.<br><br>    Guiadas por facilitadores especialistas na área<br><br>    O aprendizado se completa quando um facilitador especialista guia os alunos para os melhores caminhos já conhecidos.<br><br>"
 				}
