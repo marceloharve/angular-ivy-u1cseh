@@ -6,7 +6,7 @@
     color="primary"
     aria-label="Anterior"
     (click)="anterior()"
-    [hidden] = "dados.ehPrimeiraAula()"
+    [disabled] = "dados.ehPrimeiraAula()"
   >
     <mat-icon>skip_previous</mat-icon>
   </button>
@@ -15,7 +15,7 @@
     color="primary"
     aria-label="Próximo"
     (click)="proxima()"
-    [hidden] = "dados.ehUltimaAula()"
+    [disabled] = "dados.ehUltimaAula()"
   >
     <mat-icon>skip_next</mat-icon>
   </button>
