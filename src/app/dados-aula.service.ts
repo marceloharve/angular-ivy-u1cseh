@@ -2,6 +2,7 @@ import { Injectable, OnInit } from '@angular/core';
 import * as data from './_files/analytics.json';
 import { Curso } from './curso';
 import { DomSanitizer } from '@angular/platform-browser';
+import { Aula } from './aula';
 
 @Injectable({ providedIn: 'root' })
 export class DadosAulaService implements OnInit {
@@ -78,7 +79,7 @@ export class DadosAulaService implements OnInit {
     }
   }
 
-  getAulaAtual() {
+  getTopicoAtual() {
     let item = this._curso.aulas[this._indexaula].topicos.find(p => p.atual == true);
 
     if (item != null) {
@@ -86,6 +87,11 @@ export class DadosAulaService implements OnInit {
     } else {
       return '';
     }
+  }
+
+  getAulaAtual():Aula
+  {
+    return this._curso.aulas[this._indexaula];
   }
 
   getVideoAtual() {

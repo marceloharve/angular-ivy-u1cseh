@@ -1,56 +1,59 @@
 {
-  "nome": "Formação em Marketing Digital 1",
-  "aulas": [
-    {
-      "nome": "Google Analytics 1",
-      "aula": 15,
-      "disabled":true,
-      "topicos": [
-        {
-          "idTopicoAula": 0,
-          "nome": "Boas vindas",
-          "MensagemBoasVindas": "<h2>Bem vindo a aula de Google Analytics - 1</h2><br>Olá, você está no módulo de Analytics, na aula 15 da Formação de Marketing Digital 1.<br>O curso híbrido Harve é formado de aulas de preparação online e experiência presencial no centro de práticas Harve.<br><br> Ao todo são 16 ciclos de aula  online + aula presencial, com facilitadores experiêntes resolvendo em turmas exclusivas de no máximo 10 alunos.<br><br>Conheça mais em <a href=\"https://harve.com.br/curso-marketing-digital-hibrido/\" target=\"_blank\">www.harve.com.br</a>"
-        },
-        {
-          "idTopicoAula": 1,
-          "nome": "O que é o Digital Analytics",
-          "video": "https://player.vimeo.com/video/561081682?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;h=ef2d028c70",
-          "revisao": "<h2>1. O que é Web Analytics?</h2><p><b></b></p><p><span>A Web Analytics ou Digital Analytics, engloba a coleta, medição, análise,visualização e interpretação de dados digitais que ilustram ocomportamento dos usuários em sites, sites móveis e aplicativos móveis.</span></p><br /><h2>2. Cookies</h2><p><b></b></p><p></p><span>Os cookies são arquivos de texto armazenados no seu computador que servem para registrar informações sobre o seu acesso a um site. Cada novo site acessado gera um novo cookie.&nbsp;Cada navegador, cada computador, tem um cookie diferente.<br /></span><br /><h2>3. As ferramentas de Analytics não são perfeitas</h2><p><b></b></p><p></p><p><span>Ou seja, aquele número que vamos ver no Google Analytics não está falando exatamente de pessoas no nosso site, mas cookies. Entender isso é importante, uma vez que quando olharmos os dados, precisaremos levar em conta que eles não são perfeitos. Então lembre: os dados do Google        Analytics não são perfeitos, mas não significa que não são úteis</span><br /> </p><p><br /></p><br /><p></p>",
-          "desafio": {
-            "pergunta": "No Google Analytics,ele considera um usuário?",
-            "respostas": [
-              "Através do Coockie de cada navegador",
-              "Através do Dispositivo",
-              "Através do E-mail logado",
-              "Através do Navegador"
-            ],
-            "respostacerta": 0,
-            "setup": ""
-          }
-        },
-        {
-          "idTopicoAula": 2,
-          "nome": "Entendendo o Google Analytics",
-          "video": "https://player.vimeo.com/video/560188533?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;h=a7d573072c",
-          "revisao": "<h2>1.&nbsp;Google Analytics é uma ferramenta de web reporting do Google</h2><p><span><span>O uso do Google Analytics (GA) é gratuito. Basta ter uma conta google e um site e você já pode criar seu acesso e instalar os códigos no seu site e voilà! Em tempo real você vai ver as pessoas acessando o seu site. Porém existe uma <a href=\"https://support.google.com/analytics/answer/3437434?hl=pt-BR\" target=\"_blank\">versão paga do GA</a>.</span><br></span> </p> <p><span><span><br></span></span> </p> <p><span><span></span></span> </p> <h2>2.&nbsp;Contas, Propriedades e Vistas</h2> <br> <h3>Contas&nbsp;</h3> <p><span style=\"font-size: 0.85rem;\">Uma conta é seu ponto de acesso para o Google Analytics. Uma organização pode ter uma ou mais contas.</span><br></p> <p><span style=\"font-size: 0.85rem;\">Você precisa ter no mínimo uma conta para garantir acesso e identificar as propriedades que quer acompanhar.</span></p> <p><span style=\"font-size: 0.85rem;\"><br></span></p> <h3>Propriedades</h3> <p><span style=\"font-size: 0.85rem;\">Uma propriedade é um site, um app para dispositivos móveis ou outros dispositivos (por exemplo: um dispositivo de quiosque ou ponto de venda). Uma conta pode ter uma ou mais propriedades.</span><br></p> <p><span style=\"font-size: 0.85rem;\">Em uma conta do Google Analytics, você adiciona as propriedades escolhidas para coletar dados. Ao adicionar uma nova propriedade da Web a uma conta, o Google Analytics <b>gera o código de acompanhamento usado para coletar dados </b>da propriedade da Web. <b>O código de acompanhamento contém um ID exclusivo</b> que identifica os dados da propriedade e facilita a identificação nos seus relatórios.&nbsp;</span><br></p> <p><br></p> <h3>Vistas</h3> <p><span style=\"font-size: 0.85rem;\">Uma vista é seu ponto de acesso para os relatórios. Em outras palavras, ela é um modo definido de visualização dos dados de uma propriedade. Cada vista pode ter metas e filtros de dados diferenciados. Você concede aos usuários acesso a uma vista da propriedade para que eles possam ver os relatórios com base nos dados da visualização. Uma propriedade pode conter uma ou mais vistas.</span></p> <p><br></p>  <p>Um exemplo: uma loja virtual que vende no mundo todo poderia ter a seguinte estrutura dentro do GA:&nbsp;</p> <p><b>Conta</b>: Loja Virtual X&nbsp;</p> <p><b>Propriedade</b>: www.lojavirtualx.com , www.blogdaloja.com</p> <p><b>Vistas</b>: All data, EUA, Europa, Asia&nbsp;</p>  <p>Outro exemplo pode ser visto <a href=\"https://support.google.com/analytics/answer/1102152?hl=pt-BR#zippy=%2Cneste-artigo\" target=\"_blank\">neste link</a></p> <p><br></p>",
-          "desafio": {
-            "pergunta": "Qual é a estrutura válida para o Google Merchandising Store?",
-            "respostas": [
-              "Conta: Demo account -> Propriedade: UA - Google Merchandising store -> Vista: Master view",
-              "Conta: Google account -> Propriedade: UA - Google Merchandising store -> Vista: Reports",
-              "Conta: Demo account -> Propriedade: Site Google -> Vista: Master view",
-              "Conta: Google account -> Propriedade: UA - Google Merchandising store -> Vista: Reports"
-            ],
-            "respostacerta": 0,
-            "setup": "<p></p><h2>Setup - Analytics</h2><div>    <div><p></p><h3>Para realizar esse desafio, você precisará realizar os seguintes setups:</h3> <p><br></p> <p><b>Ferramenta</b>: Google Analytics</p><p><b>Conta vinculada</b>: Google Merchandising Store</p><p><b>Forma de acesso</b>: Web via browser</p> <p><a href=\"https://analytics.google.com/analytics/web/?utm_source=demoaccount&amp;utm_medium=demoaccount&amp;utm_campaign=demoaccount#/report/visitors-overview/a54516992w87479473p92320289/\" target=\"_blank\" class=\"btn-link btn-secondary\"><b>Acessar</b></a></p><p><br></p><p><b>Empresas:</b></p><p><b>Google Merchandising Store</b></p><p>A loja do Google Merchandiging Store é uma loja virtual do Google que permite a compra de brindes e produtos ligados a Marca Google como canecas, camisetas, entre outros.</p></div></div><br><p></p>"
-          }
-        },
-        {
-          "idTopicoAula": 3,
-          "nome": "Centro de Práticas",
-          "CP": "<h2>Sua experiência vai ficar completa no Centro de Práticas Harve</h2><br>  Aplicação do conhecimento em desafios reais<br><br>    Tudo que viu nas videoaulas online são abordados em desafios enfrentados pelo mercado, com insights entre os alunos e o facilitador para a resolução dos desafios.<br><br>    Turmas exclusivas de no máximo 10 alunos <br><br>O contato próximo entre os alunos permite que todos tenham voz e se abram para a troca de aprendizado e network.<br><br>    Guiadas por facilitadores especialistas na área<br><br>    O aprendizado se completa quando um facilitador especialista guia os alunos para os melhores caminhos já conhecidos.<br><br>"
-        }
-      ]
-    }
-  ]
+	"nome": "Formação em Marketing Digital 1",
+	"aulas": [{
+			"nome": "Google Analytics 1",
+			"aula": 15,
+			"disabled": true,
+			"topicos": [{
+					"idTopicoAula": 0,
+					"nome": "Boas vindas",
+					"MensagemBoasVindas": "<h2>Bem vindo a aula de Google Analytics - 1</h2><br>Olá, você está no módulo de Analytics, na aula 15 da Formação de Marketing Digital 1.<br>O curso híbrido Harve é formado de aulas de preparação online e experiência presencial no centro de práticas Harve.<br><br> Ao todo são 16 ciclos de aula  online + aula presencial, com facilitadores experiêntes resolvendo em turmas exclusivas de no máximo 10 alunos.<br><br>Conheça mais em <a href=\"https://harve.com.br/curso-marketing-digital-hibrido/\" target=\"_blank\">www.harve.com.br</a>"
+				},
+				{
+					"idTopicoAula": 1,
+					"nome": "O que é o Digital Analytics",
+					"video": "https://player.vimeo.com/video/561081682?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;h=ef2d028c70",
+					"revisao": "<h2>1. O que é Web Analytics?</h2><p><b></b></p><p><span>A Web Analytics ou Digital Analytics, engloba a coleta, medição, análise,visualização e interpretação de dados digitais que ilustram ocomportamento dos usuários em sites, sites móveis e aplicativos móveis.</span></p><br /><h2>2. Cookies</h2><p><b></b></p><p></p><span>Os cookies são arquivos de texto armazenados no seu computador que servem para registrar informações sobre o seu acesso a um site. Cada novo site acessado gera um novo cookie.&nbsp;Cada navegador, cada computador, tem um cookie diferente.<br /></span><br /><h2>3. As ferramentas de Analytics não são perfeitas</h2><p><b></b></p><p></p><p><span>Ou seja, aquele número que vamos ver no Google Analytics não está falando exatamente de pessoas no nosso site, mas cookies. Entender isso é importante, uma vez que quando olharmos os dados, precisaremos levar em conta que eles não são perfeitos. Então lembre: os dados do Google        Analytics não são perfeitos, mas não significa que não são úteis</span><br /> </p><p><br /></p><br /><p></p>",
+					"desafio": {
+						"pergunta": "No Google Analytics,ele considera um usuário?",
+						"respostas": [
+							"Através do Coockie de cada navegador",
+							"Através do Dispositivo",
+							"Através do E-mail logado",
+							"Através do Navegador"
+						],
+						"respostacerta": 0,
+						"setup": ""
+					}
+				},
+				{
+					"idTopicoAula": 2,
+					"nome": "Entendendo o Google Analytics",
+					"video": "https://player.vimeo.com/video/560188533?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;h=a7d573072c",
+					"revisao": "<h2>1.&nbsp;Google Analytics é uma ferramenta de web reporting do Google</h2><p><span><span>O uso do Google Analytics (GA) é gratuito. Basta ter uma conta google e um site e você já pode criar seu acesso e instalar os códigos no seu site e voilà! Em tempo real você vai ver as pessoas acessando o seu site. Porém existe uma <a href=\"https://support.google.com/analytics/answer/3437434?hl=pt-BR\" target=\"_blank\">versão paga do GA</a>.</span><br></span> </p> <p><span><span><br></span></span> </p> <p><span><span></span></span> </p> <h2>2.&nbsp;Contas, Propriedades e Vistas</h2> <br> <h3>Contas&nbsp;</h3> <p><span style=\"font-size: 0.85rem;\">Uma conta é seu ponto de acesso para o Google Analytics. Uma organização pode ter uma ou mais contas.</span><br></p> <p><span style=\"font-size: 0.85rem;\">Você precisa ter no mínimo uma conta para garantir acesso e identificar as propriedades que quer acompanhar.</span></p> <p><span style=\"font-size: 0.85rem;\"><br></span></p> <h3>Propriedades</h3> <p><span style=\"font-size: 0.85rem;\">Uma propriedade é um site, um app para dispositivos móveis ou outros dispositivos (por exemplo: um dispositivo de quiosque ou ponto de venda). Uma conta pode ter uma ou mais propriedades.</span><br></p> <p><span style=\"font-size: 0.85rem;\">Em uma conta do Google Analytics, você adiciona as propriedades escolhidas para coletar dados. Ao adicionar uma nova propriedade da Web a uma conta, o Google Analytics <b>gera o código de acompanhamento usado para coletar dados </b>da propriedade da Web. <b>O código de acompanhamento contém um ID exclusivo</b> que identifica os dados da propriedade e facilita a identificação nos seus relatórios.&nbsp;</span><br></p> <p><br></p> <h3>Vistas</h3> <p><span style=\"font-size: 0.85rem;\">Uma vista é seu ponto de acesso para os relatórios. Em outras palavras, ela é um modo definido de visualização dos dados de uma propriedade. Cada vista pode ter metas e filtros de dados diferenciados. Você concede aos usuários acesso a uma vista da propriedade para que eles possam ver os relatórios com base nos dados da visualização. Uma propriedade pode conter uma ou mais vistas.</span></p> <p><br></p>  <p>Um exemplo: uma loja virtual que vende no mundo todo poderia ter a seguinte estrutura dentro do GA:&nbsp;</p> <p><b>Conta</b>: Loja Virtual X&nbsp;</p> <p><b>Propriedade</b>: www.lojavirtualx.com , www.blogdaloja.com</p> <p><b>Vistas</b>: All data, EUA, Europa, Asia&nbsp;</p>  <p>Outro exemplo pode ser visto <a href=\"https://support.google.com/analytics/answer/1102152?hl=pt-BR#zippy=%2Cneste-artigo\" target=\"_blank\">neste link</a></p> <p><br></p>",
+					"desafio": {
+						"pergunta": "Qual é a estrutura válida para o Google Merchandising Store?",
+						"respostas": [
+							"Conta: Demo account -> Propriedade: UA - Google Merchandising store -> Vista: Master view",
+							"Conta: Google account -> Propriedade: UA - Google Merchandising store -> Vista: Reports",
+							"Conta: Demo account -> Propriedade: Site Google -> Vista: Master view",
+							"Conta: Google account -> Propriedade: UA - Google Merchandising store -> Vista: Reports"
+						],
+						"respostacerta": 0,
+						"setup": "<p></p><h2>Setup - Analytics</h2><div>    <div><p></p><h3>Para realizar esse desafio, você precisará realizar os seguintes setups:</h3> <p><br></p> <p><b>Ferramenta</b>: Google Analytics</p><p><b>Conta vinculada</b>: Google Merchandising Store</p><p><b>Forma de acesso</b>: Web via browser</p> <p><a href=\"https://analytics.google.com/analytics/web/?utm_source=demoaccount&amp;utm_medium=demoaccount&amp;utm_campaign=demoaccount#/report/visitors-overview/a54516992w87479473p92320289/\" target=\"_blank\" class=\"btn-link btn-secondary\"><b>Acessar</b></a></p><p><br></p><p><b>Empresas:</b></p><p><b>Google Merchandising Store</b></p><p>A loja do Google Merchandiging Store é uma loja virtual do Google que permite a compra de brindes e produtos ligados a Marca Google como canecas, camisetas, entre outros.</p></div></div><br><p></p>"
+					}
+				},
+				{
+					"idTopicoAula": 3,
+					"nome": "Centro de Práticas",
+					"CP": "<h2>Sua experiência vai ficar completa no Centro de Práticas Harve</h2><br>  Aplicação do conhecimento em desafios reais<br><br>    Tudo que viu nas videoaulas online são abordados em desafios enfrentados pelo mercado, com insights entre os alunos e o facilitador para a resolução dos desafios.<br><br>    Turmas exclusivas de no máximo 10 alunos <br><br>O contato próximo entre os alunos permite que todos tenham voz e se abram para a troca de aprendizado e network.<br><br>    Guiadas por facilitadores especialistas na área<br><br>    O aprendizado se completa quando um facilitador especialista guia os alunos para os melhores caminhos já conhecidos.<br><br>"
+				}
+			]
+		},
+		{
+			"nome": "Google Analytics 2",
+			"aula": 16,
+			"disabled": false
+		}
+	]
 }

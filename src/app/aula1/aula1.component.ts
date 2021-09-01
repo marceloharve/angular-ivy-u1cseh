@@ -66,8 +66,7 @@ export class Aula1Component implements OnInit {
   imprimiraula() {
     this.boasvindas = this.dados.getBoasVindasAtual();
     this.cp = this.dados.getCPAtual();
-    this.aulaatual = this.dados.getAulaAtual();
-    console.log(this.boasvindas);
+    this.aulaatual = this.dados.getTopicoAtual();
     if (this.dados.hasBoasVindas()) {
       this.defineboasvindas();
       this.divControles = false;
