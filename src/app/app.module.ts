@@ -25,7 +25,7 @@ import { ListacursosComponent } from './listacursos/listacursos.component';
     {path: "aula1/:id", component: Aula1Component},
     {path: "listacursos", component: ListacursosComponent},
   ]), ],
-  declarations: [ SafePipe,Menu,AppComponent, HelloComponent,Aula1Component ],
+  declarations: [ SafePipe,Menu,AppComponent, HelloComponent,Aula1Component,ListacursosComponent ],
   bootstrap:    [ AppComponent ],
   providers: [
     DadosAulaService
