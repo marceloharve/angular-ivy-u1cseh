@@ -1,10 +1,12 @@
 {
 	"nome": "Formação em Marketing Digital 1",
-	"aulas": [{
+	"aulas": [
+		{
 			"nome": "Google Analytics 1",
 			"aula": 15,
 			"disabled": true,
-			"topicos": [{
+			"topicos": [
+				{
 					"idTopicoAula": 0,
 					"nome": "Boas vindas",
 					"MensagemBoasVindas": "<h2>Bem vindo a aula de Google Analytics - 1</h2><br>Olá, você está no módulo de Analytics, na aula 15 da Formação de Marketing Digital 1.<br>O curso híbrido Harve é formado de aulas de preparação online e experiência presencial no centro de práticas Harve.<br><br> Ao todo são 16 ciclos de aula  online + aula presencial, com facilitadores experiêntes resolvendo em turmas exclusivas de no máximo 10 alunos.<br><br>Conheça mais em <a href=\"https://harve.com.br/curso-marketing-digital-hibrido/\" target=\"_blank\">www.harve.com.br</a>"
@@ -53,7 +55,38 @@
 		{
 			"nome": "Google Analytics 2",
 			"aula": 16,
-			"disabled": false
+			"disabled": false,
+			"topicos": [
+				{
+					"idTopicoAula": 1,
+					"nome": "Relatórios de Comércio Eletrônico"
+				},
+				{
+					"idTopicoAula": 2,
+					"nome": "Estrutura dos Relatórios"
+				},
+				{
+					"idTopicoAula": 3,
+					"nome": "Relatórios de Conversão e Configuração de Eventos"
+				},
+				{
+					"idTopicoAula": 4,
+					"nome": "Tipos de Meta ou Conversões"
+				},
+				{
+					"idTopicoAula": 5,
+					"nome": "UTMs"
+				},
+				{
+					"idTopicoAula": 5,
+					"nome": "UTMs"
+				},
+				{
+					"idTopicoAula": 6,
+					"nome": "Centro de Práticas",
+					"CP": "<h2>Sua experiência vai ficar completa no Centro de Práticas Harve</h2><br>  Aplicação do conhecimento em desafios reais<br><br>    Tudo que viu nas videoaulas online são abordados em desafios enfrentados pelo mercado, com insights entre os alunos e o facilitador para a resolução dos desafios.<br><br>    Turmas exclusivas de no máximo 10 alunos <br><br>O contato próximo entre os alunos permite que todos tenham voz e se abram para a troca de aprendizado e network.<br><br>    Guiadas por facilitadores especialistas na área<br><br>    O aprendizado se completa quando um facilitador especialista guia os alunos para os melhores caminhos já conhecidos.<br><br>"
+				}
+			]
 		}
 	]
 }
