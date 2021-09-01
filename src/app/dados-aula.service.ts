@@ -1,17 +1,18 @@
 import { Injectable, OnInit } from '@angular/core';
 import * as data from './_files/analytics.json';
-import { Aula } from './aula';
+import { Curso } from './curso';
 import { DomSanitizer } from '@angular/platform-browser';
 
 @Injectable({ providedIn: 'root' })
 export class DadosAulaService implements OnInit {
   [x: string]: any;
-  _analytics: Aula = (data as any).default;
+  _curso: Curso = (data as any).default;
+
   constructor(private sanitizer: DomSanitizer) {
 
-    this._analytics.atual = true;
-    this._analytics.topicos[0].atual = true;
-    this._analytics.topicos.forEach(p =>{
+    this._curso.aulas[0].atual = true;
+    this._curso.aulas[0].topicos[0].atual = true;
+    this._curso.aulas[0].topicos.forEach(p =>{
       p.checked = false;
     });
   }
@@ -19,7 +20,7 @@ export class DadosAulaService implements OnInit {
   ngOnInit() {}
 
   getRevisaoAtual() {
-    let item = this._analytics.topicos.find(p => p.atual == true);
+    let item = this._curso.aulas[0].topicos.find(p => p.atual == true);
 
     if (item != null) {
 
@@ -31,7 +32,7 @@ export class DadosAulaService implements OnInit {
 
   
   getBoasVindasAtual() {
-    let item = this._analytics.topicos.find(p => p.atual == true);
+    let item = this._curso.aulas[0].topicos.find(p => p.atual == true);
 
     if (item != null) {
 
@@ -43,7 +44,7 @@ export class DadosAulaService implements OnInit {
   }
 
   getCPAtual(){
-    let item = this._analytics.topicos.find(p => p.atual == true);
+    let item = this._curso.aulas[0].topicos.find(p => p.atual == true);
 
     if (item != null) {
 
@@ -77,7 +78,7 @@ export class DadosAulaService implements OnInit {
   }
 
   getAulaAtual() {
-    let item = this._analytics.topicos.find(p => p.atual == true);
+    let item = this._curso.aulas[0].topicos.find(p => p.atual == true);
 
     if (item != null) {
       return item.nome;
@@ -87,7 +88,7 @@ export class DadosAulaService implements OnInit {
   }
 
   getVideoAtual() {
-    let item = this._analytics.topicos.find(p => p.atual == true);
+    let item = this._curso.aulas[0].topicos.find(p => p.atual == true);
 
     if (item != null) {
       return this.sanitizer.bypassSecurityTrustResourceUrl(item.video);
@@ -97,7 +98,7 @@ export class DadosAulaService implements OnInit {
   }
 
   getPerguntaAtual() {
-    let item = this._analytics.topicos.find(p => p.atual == true);
+    let item = this._curso.aulas[0].topicos.find(p => p.atual == true);
 
     if (item != null) {
       if(item.desafio != undefined)
@@ -111,15 +112,15 @@ export class DadosAulaService implements OnInit {
   
 
   getAtual() {
-    return this._analytics.topicos.find(p => p.atual == true);
+    return this._curso.aulas[0].topicos.find(p => p.atual == true);
   }
 
   proximaAula() {
-    let indice = this._analytics.topicos.findIndex(p => p.atual == true);
-    if (indice + 1 <= this._analytics.topicos.length) {
-      this._analytics.topicos[indice].atual = false;
-      this._analytics.topicos[indice].checked = true;
-      this._analytics.topicos[indice + 1].atual = true;
+    let indice = this._curso.aulas[0].topicos.findIndex(p => p.atual == true);
+    if (indice + 1 <= this._curso.aulas[0].topicos.length) {
+      this._curso.aulas[0].topicos[indice].atual = false;
+      this._curso.aulas[0].topicos[indice].checked = true;
+      this._curso.aulas[0].topicos[indice + 1].atual = true;
 
     }
   }
@@ -127,10 +128,10 @@ export class DadosAulaService implements OnInit {
   selecionatopico(idTopicoAula)
   {
     console.log(idTopicoAula);
-    let _indice = this._analytics.topicos.findIndex(p => p.idTopicoAula == idTopicoAula );
+    let _indice = this._curso.aulas[0].topicos.findIndex(p => p.idTopicoAula == idTopicoAula );
     if (_indice => 0) {
-      this._analytics.topicos.forEach(t => t.atual = false);
-      this._analytics.topicos[_indice].atual = true;
+      this._curso.aulas[0].topicos.forEach(t => t.atual = false);
+      this._curso.aulas[0].topicos[_indice].atual = true;
 
     }    
   }
@@ -146,7 +147,7 @@ export class DadosAulaService implements OnInit {
 
   quantidadevistas()
   {
-    let aulascheckada = this._analytics.topicos.filter(p => p.checked == true).length;
-    return  (aulascheckada/this._analytics.topicos.length)*100;
+    let aulascheckada = this._curso.aulas[0].topicos.filter(p => p.checked == true).length;
+    return  (aulascheckada/this._curso.aulas[0].topicos.length)*100;
   }
 }
