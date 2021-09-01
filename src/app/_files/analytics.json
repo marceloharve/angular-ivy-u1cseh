@@ -4,7 +4,7 @@
 		{
 			"nome": "Google Analytics 1",
 			"aula": 15,
-			"disabled": true,
+			"disabled": false,
 			"topicos": [
 				{
 					"idTopicoAula": 0,
@@ -42,7 +42,7 @@
 							"Conta: Google account -> Propriedade: UA - Google Merchandising store -> Vista: Reports"
 						],
 						"respostacerta": 0,
-						"setup": "<p></p><h2>Setup - Analytics</h2><div>    <div><p></p><h3>Para realizar esse desafio, você precisará realizar os seguintes setups:</h3> <p><br></p> <p><b>Ferramenta</b>: Google Analytics</p><p><b>Conta vinculada</b>: Google Merchandising Store</p><p><b>Forma de acesso</b>: Web via browser</p> <p><a href=\"https://analytics.google.com/analytics/web/?utm_source=demoaccount&amp;utm_medium=demoaccount&amp;utm_campaign=demoaccount#/report/visitors-overview/a54516992w87479473p92320289/\" target=\"_blank\" class=\"btn-link btn-secondary\"><b>Acessar</b></a></p><p><br></p><p><b>Empresas:</b></p><p><b>Google Merchandising Store</b></p><p>A loja do Google Merchandiging Store é uma loja virtual do Google que permite a compra de brindes e produtos ligados a Marca Google como canecas, camisetas, entre outros.</p></div></div><br><p></p>"
+						"setup": "<p></p><h2>Setup - Analytics</h2><div>    <div><p></p><h3>Para realizar esse desafio, você precisará realizar os seguintes setups:</h3> <p><br></p> <p><b>Ferramenta</b>: Google Analytics</p><p><b>Conta vinculada</b>: Google Merchandising Store</p><p><b>Forma de acesso</b>: Web via browser</p> <p><a href=\"https://analytics.google.com/analytics/web/?utm_source=demoaccount&amp;utm_medium=demoaccount&amp;utm_campaign=demoaccount#/report/visitors-overview/a54516992w87479473p92320289/\" target=\"_blank\" class=\"btn-link btn-secondary\"><b>->Clique aqui para acessar<-</b></a></p><p><br></p><p><b>Empresas:</b></p><p><b>Google Merchandising Store</b></p><p>A loja do Google Merchandiging Store é uma loja virtual do Google que permite a compra de brindes e produtos ligados a Marca Google como canecas, camisetas, entre outros.</p></div></div><br><p></p>"
 					}
 				},
 				{
@@ -59,7 +59,7 @@
 							"Comportamento"
 						],
 						"respostacerta": 2,
-						"setup": "<p></p><h2>Setup - Analytics</h2><div>    <div><p></p><h3>Para realizar esse desafio, você precisará realizar os seguintes setups:</h3> <p><br></p> <p><b>Ferramenta</b>: Google Analytics</p><p><b>Conta vinculada</b>: Google Merchandising Store</p><p><b>Forma de acesso</b>: Web via browser</p> <p><a href=\"https://analytics.google.com/analytics/web/?utm_source=demoaccount&amp;utm_medium=demoaccount&amp;utm_campaign=demoaccount#/report/visitors-overview/a54516992w87479473p92320289/\" target=\"_blank\" class=\"btn-link btn-secondary\"><b>Acessar</b></a></p><p><br></p><p><b>Empresas:</b></p><p><b>Google Merchandising Store</b></p><p>A loja do Google Merchandiging Store é uma loja virtual do Google que permite a compra de brindes e produtos ligados a Marca Google como canecas, camisetas, entre outros.</p></div></div><br><p></p>"
+						"setup": "<p></p><h2>Setup - Analytics</h2><div>    <div><p></p><h3>Para realizar esse desafio, você precisará realizar os seguintes setups:</h3> <p><br></p> <p><b>Ferramenta</b>: Google Analytics</p><p><b>Conta vinculada</b>: Google Merchandising Store</p><p><b>Forma de acesso</b>: Web via browser</p> <p><a href=\"https://analytics.google.com/analytics/web/?utm_source=demoaccount&amp;utm_medium=demoaccount&amp;utm_campaign=demoaccount#/report/visitors-overview/a54516992w87479473p92320289/\" target=\"_blank\" class=\"btn-link btn-secondary\"><b>->Clique aqui para acessar<-</b></a></p><p><br></p><p><b>Empresas:</b></p><p><b>Google Merchandising Store</b></p><p>A loja do Google Merchandiging Store é uma loja virtual do Google que permite a compra de brindes e produtos ligados a Marca Google como canecas, camisetas, entre outros.</p></div></div><br><p></p>"
 					}
 				},
 				{
@@ -76,7 +76,7 @@
 							"Android"
 						],
 						"respostacerta": 1,
-						"setup": "<p></p><h2>Setup - Analytics</h2><div>    <div><p></p><h3>Para realizar esse desafio, você precisará realizar os seguintes setups:</h3> <p><br></p> <p><b>Ferramenta</b>: Google Analytics</p><p><b>Conta vinculada</b>: Google Merchandising Store</p><p><b>Forma de acesso</b>: Web via browser</p> <p><a href=\"https://analytics.google.com/analytics/web/?utm_source=demoaccount&amp;utm_medium=demoaccount&amp;utm_campaign=demoaccount#/report/visitors-overview/a54516992w87479473p92320289/\" target=\"_blank\" class=\"btn-link btn-secondary\"><b>Acessar</b></a></p><p><br></p><p><b>Empresas:</b></p><p><b>Google Merchandising Store</b></p><p>A loja do Google Merchandiging Store é uma loja virtual do Google que permite a compra de brindes e produtos ligados a Marca Google como canecas, camisetas, entre outros.</p></div></div><br><p></p>"
+						"setup": "<p></p><h2>Setup - Analytics</h2><div>    <div><p></p><h3>Para realizar esse desafio, você precisará realizar os seguintes setups:</h3> <p><br></p> <p><b>Ferramenta</b>: Google Analytics</p><p><b>Conta vinculada</b>: Google Merchandising Store</p><p><b>Forma de acesso</b>: Web via browser</p> <p><a href=\"https://analytics.google.com/analytics/web/?utm_source=demoaccount&amp;utm_medium=demoaccount&amp;utm_campaign=demoaccount#/report/visitors-overview/a54516992w87479473p92320289/\" target=\"_blank\" class=\"btn-link btn-secondary\"><b>->Clique aqui para acessar<-</b></a></p><p><br></p><p><b>Empresas:</b></p><p><b>Google Merchandising Store</b></p><p>A loja do Google Merchandiging Store é uma loja virtual do Google que permite a compra de brindes e produtos ligados a Marca Google como canecas, camisetas, entre outros.</p></div></div><br><p></p>"
 					}
 				},
 				{
@@ -93,7 +93,7 @@
 							"12,9%"
 						],
 						"respostacerta": 0,
-						"setup": "<p></p><h2>Setup - Analytics</h2><div>    <div><p></p><h3>Para realizar esse desafio, você precisará realizar os seguintes setups:</h3> <p><br></p> <p><b>Ferramenta</b>: Google Analytics</p><p><b>Conta vinculada</b>: Google Merchandising Store</p><p><b>Forma de acesso</b>: Web via browser</p> <p><a href=\"https://analytics.google.com/analytics/web/?utm_source=demoaccount&amp;utm_medium=demoaccount&amp;utm_campaign=demoaccount#/report/visitors-overview/a54516992w87479473p92320289/\" target=\"_blank\" class=\"btn-link btn-secondary\"><b>Acessar</b></a></p><p><br></p><p><b>Empresas:</b></p><p><b>Google Merchandising Store</b></p><p>A loja do Google Merchandiging Store é uma loja virtual do Google que permite a compra de brindes e produtos ligados a Marca Google como canecas, camisetas, entre outros.</p></div></div><br><p></p>"
+						"setup": "<p></p><h2>Setup - Analytics</h2><div>    <div><p></p><h3>Para realizar esse desafio, você precisará realizar os seguintes setups:</h3> <p><br></p> <p><b>Ferramenta</b>: Google Analytics</p><p><b>Conta vinculada</b>: Google Merchandising Store</p><p><b>Forma de acesso</b>: Web via browser</p> <p><a href=\"https://analytics.google.com/analytics/web/?utm_source=demoaccount&amp;utm_medium=demoaccount&amp;utm_campaign=demoaccount#/report/visitors-overview/a54516992w87479473p92320289/\" target=\"_blank\" class=\"btn-link btn-secondary\"><b>->Clique aqui para acessar<-</b></a></p><p><br></p><p><b>Empresas:</b></p><p><b>Google Merchandising Store</b></p><p>A loja do Google Merchandiging Store é uma loja virtual do Google que permite a compra de brindes e produtos ligados a Marca Google como canecas, camisetas, entre outros.</p></div></div><br><p></p>"
 					}
 				},
 				{
@@ -110,7 +110,7 @@
 							"2021 foi mais rápido 1,23%"
 						],
 						"respostacerta": 1,
-						"setup": "<p></p><h2>Setup - Analytics</h2><div>    <div><p></p><h3>Para realizar esse desafio, você precisará realizar os seguintes setups:</h3> <p><br></p> <p><b>Ferramenta</b>: Google Analytics</p><p><b>Conta vinculada</b>: Google Merchandising Store</p><p><b>Forma de acesso</b>: Web via browser</p> <p><a href=\"https://analytics.google.com/analytics/web/?utm_source=demoaccount&amp;utm_medium=demoaccount&amp;utm_campaign=demoaccount#/report/visitors-overview/a54516992w87479473p92320289/\" target=\"_blank\" class=\"btn-link btn-secondary\"><b>Acessar</b></a></p><p><br></p><p><b>Empresas:</b></p><p><b>Google Merchandising Store</b></p><p>A loja do Google Merchandiging Store é uma loja virtual do Google que permite a compra de brindes e produtos ligados a Marca Google como canecas, camisetas, entre outros.</p></div></div><br><p></p>"
+						"setup": "<p></p><h2>Setup - Analytics</h2><div>    <div><p></p><h3>Para realizar esse desafio, você precisará realizar os seguintes setups:</h3> <p><br></p> <p><b>Ferramenta</b>: Google Analytics</p><p><b>Conta vinculada</b>: Google Merchandising Store</p><p><b>Forma de acesso</b>: Web via browser</p> <p><a href=\"https://analytics.google.com/analytics/web/?utm_source=demoaccount&amp;utm_medium=demoaccount&amp;utm_campaign=demoaccount#/report/visitors-overview/a54516992w87479473p92320289/\" target=\"_blank\" class=\"btn-link btn-secondary\"><b>->Clique aqui para acessar<-</b></a></p><p><br></p><p><b>Empresas:</b></p><p><b>Google Merchandising Store</b></p><p>A loja do Google Merchandiging Store é uma loja virtual do Google que permite a compra de brindes e produtos ligados a Marca Google como canecas, camisetas, entre outros.</p></div></div><br><p></p>"
 					}
 				},
 				{
@@ -123,7 +123,7 @@
 		{
 			"nome": "Google Analytics 2",
 			"aula": 16,
-			"disabled": false,
+			"disabled": true,
 			"topicos": [
 				{
 					"idTopicoAula": 1,
