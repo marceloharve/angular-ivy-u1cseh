@@ -154,9 +154,12 @@ export class Aula1Component implements OnInit {
       if (this.divrevisao) {
         this.desafioclick();
       } else {
-        this.dados.proximotopico();
-        this.videoclick();
-        this.imprimiraula();
+        if (!this.dados.ehUltimaAula)
+        {
+          this.dados.proximotopico();
+          this.videoclick();
+          this.imprimiraula();
+        }
       }
     }
   }
