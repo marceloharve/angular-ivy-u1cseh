@@ -60,8 +60,6 @@ export class DadosAulaService implements OnInit {
   hasBoasVindas()
   {
     let _aulaAtual = this.getAtual();
-    console.log('msg boas vindas');
-    console.log(_aulaAtual.MensagemBoasVindas);
     if (_aulaAtual.MensagemBoasVindas == undefined) {
       return false;
     } else {
@@ -132,15 +130,16 @@ export class DadosAulaService implements OnInit {
     }
   }
 
-  proximaaula() {
-    if(this._indexaula + 1 <= this._curso.aulas.length)
+  proximaaula() :Aula{
+    if(this._indexaula <= this._curso.aulas.length)
     {
       this._indexaula =this._indexaula +1;
     }
+    return this.getAulaAtual();
   }
 
   anterioraula() {
-    if(this._indexaula -1 <=0)
+    if(this._indexaula <=0)
     {
       this._indexaula =this._indexaula -1;
     }
@@ -148,7 +147,7 @@ export class DadosAulaService implements OnInit {
 
   selecionatopico(idTopicoAula)
   {
-    console.log(idTopicoAula);
+
     let _indice = this._curso.aulas[this._indexaula].topicos.findIndex(p => p.idTopicoAula == idTopicoAula );
     if (_indice => 0) {
       this._curso.aulas[this._indexaula].topicos.forEach(t => t.atual = false);
@@ -168,7 +167,13 @@ export class DadosAulaService implements OnInit {
 
   quantidadevistas()
   {
-    let aulascheckada = this._curso.aulas[this._indexaula].topicos.filter(p => p.checked == true).length;
-    return  (aulascheckada/this._curso.aulas[this._indexaula].topicos.length)*100;
+    let aulascheckada = 0;
+    console.log(this._curso.aulas[this._indexaula]);
+    if(this._curso.aulas[this._indexaula].topicos != undefined)
+    {
+      aulascheckada = this._curso.aulas[this._indexaula].topicos.filter(p => p.checked == true).length;
+      return  (aulascheckada/this._curso.aulas[this._indexaula].topicos.length)*100;
+    }
+    return aulascheckada;
   }
 }

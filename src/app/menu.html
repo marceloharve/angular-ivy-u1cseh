@@ -1,6 +1,6 @@
 <div mat-dialog-content>
 <p>
-  {{data.dados.getAulaAtual().nome}} - Aula {{data.dados.getAulaAtual().aula}}
+  {{aulaselecionada.nome}} - Aula {{aulaselecionada.aula}}
   <button
     mat-icon-button
     color="primary"
@@ -21,7 +21,7 @@
   mode="determinate"
   [value]="data.dados.quantidadevistas()"
 ></mat-progress-bar>
-<mat-list *ngFor="let aula of data.dados.getAulaAtual().topicos">
+<mat-list *ngFor="let aula of aulaselecionada.topicos">
   <mat-list-item>
   <button mat-button [hidden]="!aula.checked">
   <mat-icon>check</mat-icon>

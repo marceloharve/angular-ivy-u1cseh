@@ -5,6 +5,7 @@ import { TopicoAula } from './topicoaula';
 import {MatMenuModule} from '@angular/material/menu';
 import { Router } from "@angular/router";
 import { DomSanitizer } from '@angular/platform-browser';
+import { Aula } from './aula';
 
 export interface DialogData {
 
@@ -35,7 +36,7 @@ export class AppComponent  {
 
   constructor(public dialog: MatDialog,public dados : DadosAulaService)
   {
-    console.log("as");
+
   }
 }
 
@@ -44,10 +45,11 @@ export class AppComponent  {
   templateUrl: 'menu.html',
 })
 export class Menu {
-
+  aulaselecionada : Aula;
   constructor(private router: Router,public dados : DadosAulaService,
     public dialogRef: MatDialogRef<Menu>,
     @Inject(MAT_DIALOG_DATA) public data: DialogData) {
+      this.aulaselecionada = data.dados.getAulaAtual();
     }
 
   onNoClick(): void {
