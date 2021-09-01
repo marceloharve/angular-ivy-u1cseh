@@ -1,4 +1,4 @@
-<div mat-dialog-content>
+<div mat-dialog-content class="mat-dialog-content">
 <p>
   {{aulaselecionada.nome}} - Aula {{aulaselecionada.aula}}
   <button
@@ -20,16 +20,16 @@
     <mat-icon>skip_next</mat-icon>
   </button>
 </p>
-{{data.dados.quantidadevistas()}}% <mat-progress-bar
+{{data.dados.quantidadevistas()}}% <mat-progress-bar class="progressbar"
   mode="determinate"
   [value]="data.dados.quantidadevistas()"
 ></mat-progress-bar>
-<mat-list *ngFor="let aula of aulaselecionada.topicos">
+<mat-list *ngFor="let aula of aulaselecionada.topicos" class="progressbar">
   <mat-list-item>
   <button mat-button [hidden]="!aula.checked">
   <mat-icon>check</mat-icon>
 </button>
-    <button mat-button (click)="selectaula(aula.idTopicoAula)" class="btnMenu">
+    <button [disabled]="aulaselecionada.disabled" mat-button (click)="selectaula(aula.idTopicoAula)" class="btnMenu" >
       {{aula.nome}} 
 
     </button>

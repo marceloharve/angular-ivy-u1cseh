@@ -195,7 +195,6 @@ export class DadosAulaService implements OnInit {
   quantidadevistas()
   {
     let aulascheckada = 0;
-    console.log(this._curso.aulas[this._indexaula]);
     if(this._curso.aulas[this._indexaula].topicos != undefined)
     {
       aulascheckada = this._curso.aulas[this._indexaula].topicos.filter(p => p.checked == true).length;

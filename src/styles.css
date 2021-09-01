@@ -13,3 +13,14 @@ a {
 .btnMenu{
   width: 100%;
 }
+
+.mat-dialog-container{
+
+  padding: 0px!important;
+  overflow-x: hidden!important;
+  font-size: small;
+}
+
+.progressbar{
+  width: 300px !important;
+}

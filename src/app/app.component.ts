@@ -25,7 +25,7 @@ export class AppComponent  {
 
   openDialog(): void {
     const dialogRef = this.dialog.open(Menu, {
-      width: '500px',height:'400px',
+      width: '400px',height:'500px',
       data: {dados: this.dados}
     });
 
