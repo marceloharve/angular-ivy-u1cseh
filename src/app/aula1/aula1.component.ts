@@ -155,7 +155,7 @@ export class Aula1Component implements OnInit {
       if (this.divrevisao) {
         this.desafioclick();
       } else {
-        this.dados.proximaAula();
+        this.dados.proximotopico();
         this.videoclick();
         this.imprimiraula();
       }
