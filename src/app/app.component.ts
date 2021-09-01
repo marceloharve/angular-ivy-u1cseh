@@ -1,4 +1,4 @@
-import { Component, Inject, VERSION } from '@angular/core';
+import { Component, Inject, OnInit, VERSION } from '@angular/core';
 import { DadosAulaService } from './dados-aula.service';
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
 import { TopicoAula } from './topicoaula';
@@ -44,12 +44,12 @@ export class AppComponent  {
   selector: 'menu',
   templateUrl: 'menu.html',
 })
-export class Menu {
+export class Menu implements OnInit {
   aulaselecionada : Aula;
   constructor(private router: Router,public dados : DadosAulaService,
     public dialogRef: MatDialogRef<Menu>,
     @Inject(MAT_DIALOG_DATA) public data: DialogData) {
-      this.aulaselecionada = data.dados.getAulaAtual();
+      
     }
 
   onNoClick(): void {
@@ -61,6 +61,9 @@ export class Menu {
     this.dados.proximaaula();
 
   }
+
+  ngOnInit() 
+  {this.aulaselecionada = this.data.dados.getAulaAtual();}
 
   selectaula(idTopicoAula)
   {

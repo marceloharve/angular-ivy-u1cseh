@@ -131,17 +131,21 @@ export class DadosAulaService implements OnInit {
   }
 
   proximaaula() :Aula{
-    if(this._indexaula <= this._curso.aulas.length)
+    if(this._indexaula+1 <= this._curso.aulas.length)
     {
       this._indexaula =this._indexaula +1;
+      console.log('indice')
+      console.log(this._indexaula)
     }
     return this.getAulaAtual();
   }
 
   anterioraula() {
-    if(this._indexaula <=0)
+    if(this._indexaula-1 <=0)
     {
       this._indexaula =this._indexaula -1;
+      console.log('indice')
+      console.log(this._indexaula)
     }
   }
 
