@@ -57,6 +57,30 @@ export class DadosAulaService implements OnInit {
 
   }
 
+  ehUltimaAula()
+  {
+    if(this._indexaula >= this._curso.aulas.length-1)
+    {
+      return true;
+    }
+    else
+    {
+      return false;
+    }
+  }
+
+  ehPrimeiraAula()
+  {
+    if(this._indexaula <= 0)
+    {
+      return true;
+    }
+    else
+    {
+      return false;
+    }
+  }
+
   hasBoasVindas()
   {
     let _aulaAtual = this.getAtual();
