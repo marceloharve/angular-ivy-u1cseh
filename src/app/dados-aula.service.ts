@@ -158,8 +158,7 @@ export class DadosAulaService implements OnInit {
     if(this._indexaula+1 < this._curso.aulas.length)
     {
       this._indexaula =this._indexaula +1;
-      console.log('indice')
-      console.log(this._indexaula)
+
     }
     return this.getAulaAtual();
   }
@@ -168,8 +167,7 @@ export class DadosAulaService implements OnInit {
     if(this._indexaula >=0)
     {
       this._indexaula =this._indexaula -1;
-      console.log('indice')
-      console.log(this._indexaula)
+
     }
     return this.getAulaAtual();
   }
