@@ -22,6 +22,9 @@ export class AppComponent  {
   name = 'Angular ' + VERSION.major;
   animal: string;
 
+  openNewTab() {
+    window.open('https://api.whatsapp.com/send?phone=5541998720061&text=Ol%C3%A1,%20quero%20saber%20mais%20sobre%20a%20Harve.', '_blank');
+  }
 
   openDialog(): void {
     const dialogRef = this.dialog.open(Menu, {

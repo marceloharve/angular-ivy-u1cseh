@@ -24,3 +24,15 @@ a {
 .progressbar{
   width: 300px !important;
 }
+
+.divComercial
+{
+  background-color: rgb(182, 120, 62);
+  padding: 8px;
+  color: white;
+}
+
+.btnComercial
+{
+  background-color: green !important;
+}
