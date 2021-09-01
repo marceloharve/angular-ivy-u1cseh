@@ -6,4 +6,5 @@ export interface Aula {
   topicos : TopicoAula[];
   checked? : boolean;
   atual?: boolean;
+  disabled?:boolean;
 }

@@ -2,8 +2,9 @@
   "nome": "Formação em Marketing Digital 1",
   "aulas": [
     {
-      "nome": "Google Analytics",
-      "aula": 1,
+      "nome": "Google Analytics 1",
+      "aula": 15,
+      "disabled":true,
       "topicos": [
         {
           "idTopicoAula": 0,
