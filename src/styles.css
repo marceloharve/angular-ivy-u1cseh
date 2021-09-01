@@ -2,12 +2,20 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 @import '~@angular/material/prebuilt-themes/indigo-pink.css';
 
+body{
+  font-family: "Studio-Feixen-Sans", Arial;
+}
+
 [hidden] {
   display: none !important;
 }
 a {
   color: rgb(15, 15, 15);
   text-decoration: none; /* no underline */
+}
+
+h1{
+  font-size: medium;
 }
 
 .btnMenu{
@@ -27,9 +35,9 @@ a {
 
 .divComercial
 {
-  background-color: rgb(182, 120, 62);
+  background-color: #E5E1DA;
   padding: 8px;
-  color: white;
+  color: #05192D;
 }
 
 .btnComercial
