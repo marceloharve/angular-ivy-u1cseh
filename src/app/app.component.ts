@@ -58,8 +58,13 @@ export class Menu implements OnInit {
 
   proxima()
   {
-    this.dados.proximaaula();
+    this.aulaselecionada = this.dados.proximaaula();
 
+  }
+
+  anterior()
+  {
+    this.aulaselecionada = this.dados.anterioraula();
   }
 
   ngOnInit() 
