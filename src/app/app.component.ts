@@ -45,13 +45,19 @@ export class AppComponent  {
 })
 export class Menu {
 
-  constructor(private router: Router,
+  constructor(private router: Router,public dados : DadosAulaService,
     public dialogRef: MatDialogRef<Menu>,
     @Inject(MAT_DIALOG_DATA) public data: DialogData) {
     }
 
   onNoClick(): void {
     this.dialogRef.close();
+  }
+
+  proxima()
+  {
+    this.dados.proximaaula();
+
   }
 
   selectaula(idTopicoAula)
